@@ -3,7 +3,7 @@
 # BACA AKU DULU YA
 ## Sebaiknya mainkan game ini pada resolusi **1920-px x 1080-px**
 #
-### Silahkan clone jika kamu tertarik dengan codingan saya!
+### Silahkan clone jika kamu tertarik!
 ## [Clone](https://github.com/pikaruo/3d-golf.git)
 #
 ### Jika kamu hanya ingin bermain saja kamu dapat mendownload installernya dibawah ini
