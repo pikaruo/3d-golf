@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Image aim;
     [SerializeField] LineRenderer line;
 
+    [SerializeField] AudioSource bolaDisodok;
+    [SerializeField] AudioSource teleportAudio;
+
     Vector3 lastMousePosititon;
     float ballDistance;
     bool isShooting;
@@ -53,8 +56,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (ball.IsMoving || ball.IsTeleporting)
+        if (ball.IsTeleporting)
+        {
+            teleportAudio.Play();
+        }
+        if (ball.IsMoving)
             return;
+
+
         // if (!cameraPivot.IsMoving && aim.gameObject.activeInHierarchy == false)
         // {
         aim.gameObject.SetActive(true);
@@ -159,6 +168,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && isShooting)
         {
             ball.AddForce(forceDir * shootForce * forceFactor);
+            bolaDisodok.Play();
             shootCount += 1;
             shootCounterText.text = "Shoot Count: " + shootCount;
             forceFactor = 0;
