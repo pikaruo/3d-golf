@@ -10,5 +10,4 @@
 ## [Link Download Installer](https://github.com/pikaruo/3d-golf/tree/main/Release%20Builds/Installer/Windows/64)
 ### Jika kamu hanya ingin bermain tetapi tidak mau menginstallnya
 ## [Link Download Portable](https://github.com/pikaruo/3d-golf/tree/main/Release%20Builds/Windows/64)
-## **TUGAS SKILVUL**
 ## by : ***pikaruo*** / ***Punto Putra Ardawan***
